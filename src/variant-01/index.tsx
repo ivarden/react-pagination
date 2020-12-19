@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import "./App.css";
+import "./styles.css";
 
-function App() {
+function Variant01() {
   const [items, setItems] = useState([]);
-  const [visible, setVisible] = useState(3);
+  const [visible, setVisible] = useState(9);
   const itemLength = items.length;
 
   const fetchDataApi = async () => {
@@ -16,7 +16,7 @@ function App() {
   }, []);
 
   const showMoreItems = () => {
-    visible <= itemLength && setVisible(visible + 3);
+    visible <= itemLength && setVisible(visible + 9);
   };
   const scrollUp = () => {
     window.scrollTo(0, 0);
@@ -64,4 +64,4 @@ function App() {
   );
 }
 
-export default App;
+export default Variant01;
