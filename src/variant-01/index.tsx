@@ -3,7 +3,7 @@ import "./styles.css";
 
 function Variant01() {
   const [items, setItems] = useState([]);
-  const [visible, setVisible] = useState(9);
+  const [visible, setVisible] = useState(18);
   const itemLength = items.length;
 
   const fetchDataApi = async () => {
@@ -16,7 +16,7 @@ function Variant01() {
   }, []);
 
   const showMoreItems = () => {
-    visible <= itemLength && setVisible(visible + 9);
+    visible <= itemLength && setVisible(visible + 18);
   };
   const scrollUp = () => {
     window.scrollTo(0, 0);
